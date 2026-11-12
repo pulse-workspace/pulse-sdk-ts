@@ -1,0 +1,44 @@
+{
+  "name": "@pulse/client-sdk",
+  "version": "0.1.0",
+  "description": "Ultra-fast, Offline-First TypeScript SDK for Pulse Platform",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "pulse",
+    "sdk",
+    "msgpack",
+    "websocket",
+    "offline-first"
+  ],
+  "author": "Pulse IM Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@msgpack/msgpack": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/ws": "^8.5.13",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "ws": "^8.18.0"
+  }
+}
